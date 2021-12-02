@@ -1,35 +1,102 @@
 #container {
     overflow-x: hidden;
-    max-height: 100%;
+    height: 100%;
     width: 100%;
+    background-color: #011936;
     font-family: monospace;
     font-size: larger;
-    background-repeat: repeat;
-    background-attachment: scroll;
-    background: repeating-linear-gradient(#16697A, #FFA62B);
-    overflow-y: overlay;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "navbar navbar" "title info" "pic info" "stuff1 stuff2";
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 0;
 }
 
 body::-webkit-scrollbar {
     display: none;
 }
 
-.titleDiv {
-    margin-top: 0 !important;
+.Net {
+    grid-area: stuff1!important;
 }
 
-#title {
-    transition: transform 0.1s linear
+.NandC {
+    grid-area: stuff2 !important;
 }
 
-#info {
-    transition: transform 0.1s linear
+body {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.navbar {
+    grid-area: navbar !important;
+    background-color: #ADFFF1 !important;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom: 0 !important;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.pic {
+    grid-area: pic !important;
+}
+
+img {
+    width: 40vw;
+    height: 20vw;
+}
+
+a {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.btn {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #ED254E;
+    color: #F4FFFD;
+    padding: 7.5px 12.5px 7.5px 12.5px;
+    cursor: pointer;
 }
 
 .main {
+    background-color: #F4FFFD;
+    border-bottom: solid 5px #ED254E;
+    border-radius: 5px;
     padding: 5px;
-    margin-top: 3vw;
     text-align: center;
+    grid-area: title;
+}
+
+.players {
+    grid-area: pic;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+.info {
+    grid-area: info !important;
+    color: #465362;
+}
+
+.title {
+    color: #465362;
+}
+
+@media only screen and (max-width: 426px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 0.3fr auto auto auto auto;
+        grid-template-areas: "navbar" "title" "info" "pic" "stuff" "moreStuff";
+    }
 }
