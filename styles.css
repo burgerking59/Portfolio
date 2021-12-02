@@ -47,10 +47,6 @@ body {
     grid-area: pic !important;
 }
 
-.description {
-    grid-area: navbar !important;
-}
-
 img {
     width: 40vw;
     height: 20vw;
