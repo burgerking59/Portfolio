@@ -13,7 +13,6 @@ body::-webkit-scrollbar {
 
 .challenges {
     width: auto;
-    display: flex;
     justify-content: center;
 }
 
@@ -22,7 +21,6 @@ body::-webkit-scrollbar {
 }
 
 .projectArea {
-    display: flex;
     justify-content: center;
 }
 
@@ -37,7 +35,7 @@ body {
 }
 
 .navbar {
-    top: 0;
+    margin-top: 0 !important;
     background-color: #ADFFF1 !important;
     border-top-left-radius: 0 !important;
     border-top-right-radius: 0 !important;
@@ -71,6 +69,9 @@ a {
 }
 
 .main {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-top: 10px;
     background-color: #F4FFFD;
     border-bottom: solid 5px #ED254E;
     border-radius: 5px;
@@ -93,39 +94,14 @@ a {
     color: #465362;
 }
 
-.titleDiv {
-    margin-top: 54.25px;
-}
-
 .title {
     color: #465362;
-}
-
-h1::before {
-    display: block;
-    content: " ";
-    margin-top: -285px;
-    height: 285px;
-    visibility: hidden;
-    pointer-events: none;
-}
-
-h2::before {
-    display: block;
-    content: " ";
-    margin-top: -61.8px;
-    height: 61.8px;
-    visibility: hidden;
-    pointer-events: none;
 }
 
 @media only screen and (max-width: 426px) {
     .btn {
         padding: 3px 6px 3px 6px;
         font-size: smaller;
-    }
-    .titleDiv {
-        margin-top: 41.8px;
     }
 }
 
