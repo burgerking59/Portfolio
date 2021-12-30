@@ -2,3 +2,73 @@
     width: 150px;
     height: 150px;
 }
+
+#container {
+    text-align: center;
+}
+
+#board {
+    width: 460px;
+    margin: auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+#pScore {
+    margin-right: 100px;
+}
+
+#aScore {
+    margin-left: 100px;
+}
+
+.resetBtn {
+    color: black;
+    background-color: white;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px;
+    padding: 7.5px;
+    margin-bottom: 10px;
+}
+
+#games {
+    width: auto;
+    text-align: center;
+}
+
+.homeBtn {
+    color: #F26419;
+    background-color: white;
+    border: solid;
+    border-width: 2px;
+    border-color: #33658A;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.link {
+    margin: 50px;
+}
+
+h4 {
+    margin: 0;
+}
+
+.title {
+    width: fit-content;
+    margin: auto;
+}
+
+#n {
+    color: #F26419;
+}
+
+#c {
+    color: #33658A;
+}
