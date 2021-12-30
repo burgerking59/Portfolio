@@ -7,17 +7,26 @@
 </head>
 
 <body onload="load()">
+    <div class="header">
+        <h1 class="title"><span id="n">Noughts</span> and <span id="c">Crosses</span></h1>
+    </div><br>
     <div id="board">
-        <button id="00" class="NCbtn" onclick="press(this, 0, 0)"></button>
-        <button id="01" class="NCbtn" onclick="press(this, 0, 1)"></button>
-        <button id="02" class="NCbtn" onclick="press(this, 0, 2)"></button>
-        <br>
-        <button id="10" class="NCbtn" onclick="press(this, 1, 0)"></button>
-        <button id="11" class="NCbtn" onclick="press(this, 1, 1)"></button>
-        <button id="12" class="NCbtn" onclick="press(this, 1, 2)"></button>
-        <br>
-        <button id="20" class="NCbtn" onclick="press(this, 2, 0)"></button>
-        <button id="21" class="NCbtn" onclick="press(this, 2, 1)"></button>
-        <button id="22" class="NCbtn" onclick="press(this, 2, 2)"></button>
+        <button onclick="reset()" class="resetBtn"><h4>Reset</h4></button><br>
+        <div id="innerBoard">
+            <label id="pScore">Player: <span id="pCount">0</span></label>
+            <label id="dScore">Draw: <span id="dCount">0</span></label>
+            <label id="aScore">AI: <span id="aCount">0</span></label><br>
+            <button id="00" class="NCbtn" onclick="press(this, 0, 0)"></button>
+            <button id="01" class="NCbtn" onclick="press(this, 0, 1)"></button>
+            <button id="02" class="NCbtn" onclick="press(this, 0, 2)"></button>
+            <br>
+            <button id="10" class="NCbtn" onclick="press(this, 1, 0)"></button>
+            <button id="11" class="NCbtn" onclick="press(this, 1, 1)"></button>
+            <button id="12" class="NCbtn" onclick="press(this, 1, 2)"></button>
+            <br>
+            <button id="20" class="NCbtn" onclick="press(this, 2, 0)"></button>
+            <button id="21" class="NCbtn" onclick="press(this, 2, 1)"></button>
+            <button id="22" class="NCbtn" onclick="press(this, 2, 2)"></button>
+        </div>
     </div>
 </body>
