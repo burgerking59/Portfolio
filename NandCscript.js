@@ -21,45 +21,82 @@ function load() {
     boardy = 0;
     turn = 2;
     depth = 0;
+    win = false;
+}
+
+function reset() {
+    document.getElementById("00").style.background = "white";
+    document.getElementById("01").style.background = "white";
+    document.getElementById("02").style.background = "white";
+    document.getElementById("10").style.background = "white";
+    document.getElementById("11").style.background = "white";
+    document.getElementById("12").style.background = "white";
+    document.getElementById("20").style.background = "white";
+    document.getElementById("21").style.background = "white";
+    document.getElementById("22").style.background = "white";
+    board = [
+        [0, 0, 0],
+        [0, 0, 0],
+        [0, 0, 0]
+    ];
+    row = 0;
+    column = 0;
+    draw = 0;
+    boardx = 0;
+    boardy = 0;
+    turn = 2;
+    depth = 0;
+    win = false;
 }
 
 function press(btn, row, column) {
-    btn.style.background = "blue";
-    board[row][column] = 1;
-    winner = checkWin(board)
-    if (winner != 0) {
-        bestMove = -Infinity;
-        moves = [];
-        //check every possible move
-        for (v = 0; v < 3; v++) {
-            for (w = 0; w < 3; w++) {
-                if (board[v][w] == 0) {
-                    board[v][w] = 2;
-                    let currentMove = minimax(board, 0, false);
-                    board[v][w] = 0;
-                    moves.push([currentMove, v, w]);
+    if (board[row][column] == 0 && win == false) {
+        btn.style.backgroundImage = "url(cross.png)";
+        btn.style.backgroundSize = "100%";
+        board[row][column] = 1;
+        winner = checkWin(board)
+        if (winner != 0) {
+            bestMove = -Infinity;
+            moves = [];
+            //check every possible move
+            for (v = 0; v < 3; v++) {
+                for (w = 0; w < 3; w++) {
+                    if (board[v][w] == 0) {
+                        board[v][w] = 2;
+                        let currentMove = minimax(board, 0, false);
+                        board[v][w] = 0;
+                        moves.push([currentMove, v, w]);
+                    }
+                }
+            }
+            moves.sort();
+            moves.reverse();
+            board[moves[0][1]][moves[0][2]] = 2;
+            for (x = 0; x < 3; x++) {
+                for (y = 0; y < 3; y++) {
+                    if (board[x][y] == 2) {
+                        document.getElementById(String(x) + String(y)).style.backgroundImage = "url(nought.png)";
+                        document.getElementById(String(x) + String(y)).style.backgroundSize = "100%"
+                    }
                 }
             }
         }
-        moves.sort();
-        moves.reverse();
-        board[moves[0][1]][moves[0][2]] = 2;
-        for (x = 0; x < 3; x++) {
-            for (y = 0; y < 3; y++) {
-                if (board[x][y] == 2) {
-                    document.getElementById(String(x) + String(y)).style.backgroundColor = "red"
-                }
-            }
+        winner = checkWin(board)
+        console.log(winner)
+        if (winner == 10) {
+            win = true;
+            aCount = parseInt(document.getElementById("aCount").innerHTML);
+            aCount++;
+            document.getElementById("aCount").innerHTML = aCount;
+        } else if (winner == -10) {
+            win = true;
+            document.getElementById("pCount").innerHTML += 1;
+        } else if (winner == 0) {
+            win = true;
+            dCount = parseInt(document.getElementById("dCount").innerHTML);
+            dCount++;
+            document.getElementById("dCount").innerHTML = dCount;
         }
-    }
-    winner = checkWin(board)
-    console.log(winner)
-    if (winner == 10) {
-        alert("AI wins")
-    } else if (winner == -10) {
-        alert("Player wins")
-    } else if (winner == 0) {
-        alert("draw")
     }
 }
 
