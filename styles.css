@@ -58,6 +58,8 @@ img {
 a {
     margin-left: auto;
     margin-right: auto;
+    text-decoration: none;
+    color: #14213D;
 }
 
 .btn {
@@ -72,9 +74,12 @@ a {
     cursor: pointer;
 }
 
-a {
-    text-decoration: none;
-    color: #14213D;
+.navBtn {
+    margin-top: 0 !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0 !important;
+    width: fit-content;
 }
 
 .main {
@@ -107,9 +112,13 @@ a {
     color: #14213D;
 }
 
+#topBtn {
+    margin-top: 0;
+}
+
 @media only screen and (max-width: 426px) {
     .btn {
-        padding: 3px 6px 3px 6px;
+        padding: 3px 15px 3px 15px;
         font-size: smaller;
     }
     .navbar {
@@ -127,7 +136,9 @@ a {
         justify-content: center;
     }
     .navbar-phone-btn {
-        width: auto;
+        width: 100%;
+        display: flex !important;
+        margin-inline: 0;
     }
 }
 
