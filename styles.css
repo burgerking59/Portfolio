@@ -74,6 +74,10 @@ a {
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color: #f8b549;
+}
+
 .navBtn {
     margin-top: 0 !important;
     margin-left: auto;
