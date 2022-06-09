@@ -32,6 +32,10 @@ body::-webkit-scrollbar {
     width: 50%
 }
 
+.description {
+    padding-bottom: 30px !important;
+}
+
 .projectArea {
     justify-content: center;
 }
