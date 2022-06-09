@@ -20,6 +20,18 @@ body::-webkit-scrollbar {
     margin: auto;
 }
 
+.extraInfo {
+    display: none;
+    position: absolute;
+}
+
+.info:hover .extraInfo {
+    display: block;
+    background-color: #f8b549;
+    border-radius: 4px;
+    width: 50%
+}
+
 .projectArea {
     justify-content: center;
 }
