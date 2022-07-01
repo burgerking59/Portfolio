@@ -20,17 +20,24 @@ body::-webkit-scrollbar {
     margin: auto;
 }
 
-.extraInfo {
-    display: none;
-    position: absolute;
+#x {
+    position: relative;
+    left: 95%;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8b549;
 }
 
-.info:hover .extraInfo {
-    display: block;
+#extraInfo {
+    display: none;
+    position: absolute;
     background-color: #f8b549;
-    border-radius: 4px;
-    width: 50%
+    border-radius: 10px;
+    padding: 10px;
+    top: 7%;
+    margin-inline: 3%;
 }
+
 
 .description {
     padding-bottom: 60px !important;
