@@ -25,19 +25,15 @@
         <h2>Projects</h2>
         <label>These are the projects I have completed using html, css and JavaScript. I have provided a link to the wesite and the link to the github file.</label>
         <div class="project col">
-            <a href="NandCindex.html"><img src="NandC.png"></a><br>
-            <a href="NandCindex.html"><button class="btn">Noughts and Crosses</button></a>
-            <span class="info">
-            <button class="btn">i</button>
-            <label class="extraInfo">This was the project I chose to make for my computer science A-level.</label>
-            </span><br>
+            <img src="NandC.png"><br>
+            <button class="btn">Noughts and Crosses</button>
+            <button onclick="info('NandC')" class="btn">i</button><br>
             <a href="https://github.com/burgerking59"><img class="icon" src="GitHub-Mark-64px.png"></a>
         </div> <br>
         <div class="project col">
-            <a href="netmatters.html"><img src="netmatters.png"></a><br>
-            <a href="netmatters.html"><button class="btn">Solar Charging Project</button></a>
-            <span class="info"><button class="btn">i</button>
-            <label class="extraInfo">This is a project I was set by a software company called Netmatter during my work experience there.</label></span>
+            <img src="netmatters.png"><br>
+            <button class="btn">Solar Charging Project</button>
+            <button onclick="info('solar')" class="btn">i</button>
             <br>
             <a href="https://github.com/burgerking59"><img class="icon" src="GitHub-Mark-64px.png"></a>
         </div>
@@ -47,17 +43,17 @@
         <label>These are coding challenges that I've completed using python to test my ability and understanding. I have displayed them on github.</label>
         <div class="challenge col">
             <button class="btn"><a href="https://github.com/burgerking59/Portfolio/blob/main/howOld.py">How many days old</a></button>
-            <span class="info">
-                <button class="btn">i</button>
-                <label class="extraInfo">This was a project I chose to make to practice making an interface in python.</label>
-            </span>
+            <button onclick="info('days')" class="btn">i</button>
         </div>
         <div class="challenge col">
             <button class="btn"><a href="https://github.com/burgerking59/Portfolio/blob/main/numberConverter.py">Number converter</a></button>
-            <span class="info">
-                <button class="btn">i</button>
-                <label class="extraInfo">This was the project I chose to make to practice creating algorithms and converting between the different number bases.</label>
-            </span>
+            <button onclick="info('number')" class="btn">i</button>
         </div>
+    </div>
+    <div id="extraInfo">
+        <button aria-label="close" class="btn-close" onclick="closeInfo()" id="x"></button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque assumenda consequatur, officiis praesentium velit ullam commodi ex illo maiores. Itaque officia rerum accusantium placeat ex incidunt temporibus? Aspernatur rem corporis vel totam.
+            Ab repellat voluptate delectus ducimus laborum cum unde consectetur quaerat modi inventore magnam, consequatur beatae eveniet nemo culpa, atque totam sit ipsa iusto cumque harum in nobis facere quibusdam? Aut tempora dolore tempore asperiores
+            fugiat eaque deserunt nam dicta accusantium quo? Eum aperiam, magnam assumenda maiores ducimus dolorum totam est ut quis? Recusandae quos quisquam dolor nisi a repudiandae, minima, totam id perspiciatis voluptas ipsum molestias labore ab.</p>
     </div>
 </body>
