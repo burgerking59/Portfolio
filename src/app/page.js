@@ -10,7 +10,7 @@ export default function Home() {
 
       <div className="mt-16 text-center">
         <div className="bg-white p-8">
-          <h2 className="text-blue text-2xl font-semibold">I design unique and interesting websites.</h2>
+          <h2 className="text-blue text-2xl font-semibold">I am an enthusiastic software engineer.</h2>
         </div>
         <div className="bg-black p-8">
           <p className="text-white text-center">
@@ -25,13 +25,13 @@ export default function Home() {
         <h2 className="text-blue text-2xl font-semibold p-8">Projects</h2>
         <div className="flex flex-col w-full md:p-32 bg-black">
           <div className="p-16">
-            <Link href="/netmatters">
-              <Image className="w-full hover:opacity-50 duration-1000" src="/netmatters.png" width={1000} height={1000} alt="Solar charging project"/>
+            <Link href="/FYP">
+              <Image className="w-full hover:opacity-50 duration-1000" src="/FYP1.png" width={1000} height={1000} alt="Solar charging project"/>
             </Link>
           </div>
           <div className="p-16">
-            <Link href="/aproject">
-            <Image className="w-full hover:opacity-50 duration-1000" src="/AProject.png" width={1000} height={1000} alt="AProject website"/>
+            <Link href="/flippinpages">
+            <Image className="w-full hover:opacity-50 duration-1000" src="/flippinpages1.png" width={1000} height={1000} alt="Flippin Pages website"/>
             </Link>
           </div>
           <div className="p-16">
