@@ -10,6 +10,7 @@ export default function Home() {
 
       <div className="mt-16 text-center">
         <div className="bg-white p-8">
+          <h2 className="text-blue text-2xl font-semibold">I design interesting and functional websites.</h2>
           <h2 className="text-blue text-2xl font-semibold">I am an enthusiastic software engineer.</h2>
         </div>
         <div className="bg-black p-8">
