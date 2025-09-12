@@ -35,8 +35,8 @@ export default function Home() {
             </Link>
           </div>
           <div className="p-16">
-            <Link href="/unlock">
-            <Image className="w-full hover:opacity-50 duration-1000" src="/unlock.png" width={1000} height={1000} alt="Unlock game project"/>
+            <Link href="/pool">
+            <Image className="w-full hover:opacity-50 duration-1000" src="/pool.png" width={1000} height={1000} alt="Unlock game project"/>
             </Link>
           </div>
         </div>
