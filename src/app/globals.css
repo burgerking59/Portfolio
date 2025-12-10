@@ -2,3 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+.main {
+    font-family: "Atkinson Hyperlegible Next", sans-serif;
+    font-weight: 300;
+}

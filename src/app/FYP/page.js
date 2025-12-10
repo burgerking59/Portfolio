@@ -22,12 +22,17 @@ export default function page() {
             
             <ul className="flex justify-evenly w-full mt-16">
             <Link href="/">
-            <li className="bg-black text-white p-4">
+            <li className="bg-black text-white p-4 hover:opacity-80 duration-1000">
                 Home
             </li>
             </Link>
+            <Link href="https://finalyearproject-tssrs0rp.on-forge.com/login">
+            <li className="bg-black text-white p-4 hover:opacity-80 duration-1000">
+                Live Demo
+            </li>
+            </Link>
             <Link href="https://github.com/burgerking59/finalYearProject">
-            <li className="bg-black text-white p-4">
+            <li className="bg-black text-white p-4 hover:opacity-80 duration-1000">
                 Github
             </li>
             </Link>

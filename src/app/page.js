@@ -10,33 +10,38 @@ export default function Home() {
 
       <div className="mt-16 text-center">
         <div className="bg-white p-8">
-          <h2 className="text-blue text-2xl font-semibold">I am an enthusiastic software engineer.</h2>
+          <h2 className="text-blue text-2xl font-semibold">About Me</h2>
         </div>
-        <div className="bg-black p-8">
+        <div className="bg-black p-8 w-[90vw]">
           <p className="text-white text-center">
             I am a very mathematical and logical person and interested in understanding how everything works.
-            I enjoy programming and often add to my projects and 
-            learn new skills and languages in my spare time.
+            I have a Bachelor's degree in computer science. In my spare time I enjoy creating websites and games to learn and develop new skills.
+          </p>
+          <h2 className="text-white mt-8 text-2xl">Skills</h2>
+          <p className="text-white text-center mt-4">
+            I have used many programming languages and can quickly learn new ones, but I mainly use JavaScript and GDscript. I have used blender to create models for games and an animation module at university. 
           </p>
         </div>
       </div>
 
+
+
       <div className="mt-16 text-center w-full">
         <h2 className="text-blue text-2xl font-semibold p-8">Projects</h2>
-        <div className="flex flex-col w-full md:p-32 bg-black">
-          <div className="p-16">
+        <div className="flex flex-col items-center md:p-16 w-[90vw] m-auto bg-black">
+          <div className="p-8">
             <Link href="/FYP">
-              <Image className="w-full hover:opacity-50 duration-1000" src="/FYP1.png" width={1000} height={1000} alt="Solar charging project"/>
+              <Image className="border-2 w-[55vw] border-white hover:opacity-50 duration-1000" src="/FYP1.png" width={1000} height={1000} alt="Solar charging project"/>
             </Link>
           </div>
-          <div className="p-16">
+          <div className="p-8">
             <Link href="/flippinpages">
-            <Image className="w-full hover:opacity-50 duration-1000" src="/flippinpages1.png" width={1000} height={1000} alt="Flippin Pages website"/>
+            <Image className="border-2 w-[55vw] border-white hover:opacity-50 duration-1000" src="/flippinpages1.png" width={1000} height={1000} alt="Flippin Pages website"/>
             </Link>
           </div>
-          <div className="p-16">
+          <div className="p-8">
             <Link href="/pool">
-            <Image className="w-full hover:opacity-50 duration-1000" src="/pool.png" width={1000} height={1000} alt="Unlock game project"/>
+            <Image className="border-2 w-[55vw] border-white hover:opacity-50 duration-1000" src="/pool.png" width={1000} height={1000} alt="Unlock game project"/>
             </Link>
           </div>
         </div>
@@ -44,20 +49,20 @@ export default function Home() {
 
       <div className="mt-16 text-center w-full">
         <h2 className="text-blue text-2xl font-semibold p-8">Contact</h2>
-        <div className="w-full md:p-16 bg-black p-4">
+        <div className="w-full md:p-16 bg-black p-4 w-[90vw] m-auto">
           <div className="flex flex-col text-white gap-4">
             <label>Email: oliverbk4@gmail.com</label>
             <label>Phone Number: 07483228207</label>
           </div>
           <div className="flex justify-evenly">
             <Link className="p-4 md:p-8" href="https://www.linkedin.com/in/oliver-burnett-kiernan-6224a9210/">
-              <Image className="w-1/2 m-auto hover:opacity-50 duration-1000" src="/linkedin.png" width={1000} height={1000} alt="Linkedin icon"/>
+              <Image className="w-1/4 m-auto hover:opacity-50 duration-1000" src="/linkedin.png" width={1000} height={1000} alt="Linkedin icon"/>
             </Link>
             <Link className="p-4 md:p-8" href="https://burgerking404.itch.io/">
-              <Image className="w-1/2 m-auto hover:opacity-50 duration-1000" src="/itchiologo.png" width={1000} height={1000} alt="Linkedin icon"/>
+              <Image className="w-1/4 m-auto hover:opacity-50 duration-1000" src="/itchiologo.png" width={1000} height={1000} alt="Linkedin icon"/>
             </Link>
             <Link className="p-4 md:p-8" href="https://github.com/burgerking59">
-              <Image className="w-1/2 m-auto bg-white hover:opacity-50 duration-1000" src="/github.png" width={1000} height={1000} alt="Linkedin icon"/>
+              <Image className="w-1/4 m-auto bg-white hover:opacity-50 duration-1000" src="/github.png" width={1000} height={1000} alt="Linkedin icon"/>
             </Link>
           </div>
         </div>

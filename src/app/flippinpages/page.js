@@ -22,12 +22,12 @@ export default function page() {
             
             <ul className="flex justify-evenly w-full mt-16">
             <Link href="/">
-            <li className="bg-black text-white p-4">
+            <li className="bg-black text-white p-4 hover:opacity-80 duration-1000">
                 Home
             </li>
             </Link>
             <Link href="https://github.com/burgerking59/UniPortfolio3">
-            <li className="bg-black text-white p-4">
+            <li className="bg-black text-white p-4 hover:opacity-80 duration-1000">
                 Github
             </li>
             </Link>
