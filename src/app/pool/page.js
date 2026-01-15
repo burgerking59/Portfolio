@@ -8,14 +8,14 @@ export default function page() {
             <h2 className="text-blue text-2xl font-semibold">The Pool Game</h2>
             <div className="bg-black p-8 text-white mt-16 text-center">
             This is my first completed and released game on steam. It is a multiplayer pool game that allows players to host and join lobbies. I created all the 3D assets and the trailer in blender, the 2D assets in figma and programmed the game in Godot. 
-            <ul className="relative flex justify-evenly w-full mt-8">
-                <div className="relative h-32 w-1/3">
+            <ul className="relative flex max-md:flex-col justify-evenly w-full mt-8">
+                <div className="relative h-32 w-full m-2 md:w-1/3">
                 <Image className="" src="/pool1.png" objectFit="contain" fill alt="Final year project image 1"/>
                 </div>
-                <div className="relative h-32 w-1/3">
+                <div className="relative h-32 w-full m-2 md:w-1/3">
                 <Image className="" src="/pool2.png" objectFit="contain" fill alt="Final year project image 2"/>
                 </div>
-                <div className="relative h-32 w-1/3">
+                <div className="relative h-32 w-full m-2 md:w-1/3">
                 <Image className="" src="/pool3.png" objectFit="contain" fill alt="Final year project image 3"/>
                 </div>
             </ul>

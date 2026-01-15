@@ -55,13 +55,13 @@ export default function Home() {
             <label>Phone Number: 07483228207</label>
           </div>
           <div className="flex justify-evenly">
-            <Link className="p-4 md:p-8" href="https://www.linkedin.com/in/oliver-burnett-kiernan-6224a9210/">
+            <Link className="p-1 md:p-8" href="https://www.linkedin.com/in/oliver-burnett-kiernan-6224a9210/">
               <Image className="w-1/4 m-auto hover:opacity-50 duration-1000" src="/linkedin.png" width={1000} height={1000} alt="Linkedin icon"/>
             </Link>
-            <Link className="p-4 md:p-8" href="https://burgerking404.itch.io/">
+            <Link className="p-1 md:p-8" href="https://burgerking404.itch.io/">
               <Image className="w-1/4 m-auto hover:opacity-50 duration-1000" src="/itchiologo.png" width={1000} height={1000} alt="Linkedin icon"/>
             </Link>
-            <Link className="p-4 md:p-8" href="https://github.com/burgerking59">
+            <Link className="p-1 md:p-8" href="https://github.com/burgerking59">
               <Image className="w-1/4 m-auto bg-white hover:opacity-50 duration-1000" src="/github.png" width={1000} height={1000} alt="Linkedin icon"/>
             </Link>
           </div>
