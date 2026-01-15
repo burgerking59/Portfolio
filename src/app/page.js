@@ -19,7 +19,7 @@ export default function Home() {
           </p>
           <h2 className="text-white mt-8 text-2xl">Skills</h2>
           <p className="text-white text-center mt-4">
-            I have used many programming languages and can quickly learn new ones, but I mainly use JavaScript and GDscript. I have used blender to create models for games and an animation module at university. 
+            I have used many programming languages and can quickly learn new ones, but I mainly use JavaScript and GDscript. I have used blender to create models for games and an animation module at university. I am confident using git and github for version control.
           </p>
         </div>
       </div>
