@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 .main {
-    font-family: "Atkinson Hyperlegible Next", sans-serif;
-    font-weight: 300;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
