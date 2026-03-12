@@ -1,6 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Navbar } from './nav'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,9 +25,12 @@ export default function RootLayout({ children }) {
       </head>
 
       <body class="main" className={inter.className}>
-        <Navbar />
+        
+
         {children}
       </body>
     </html>
+
+    
   )
 }

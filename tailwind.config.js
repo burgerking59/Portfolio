@@ -23,7 +23,9 @@ module.exports = {
       'gradBottom': '#4C5260',
       'gradTop': '#1D2634',
       'white': '#DDD8C4',
+      'whiteBg': '#E5E5E5',
       'yellow': '#CCA43B',
+      'text': '#242F40',
       'buttonBorder': '#343940'
     },
   },
