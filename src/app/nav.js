@@ -29,8 +29,8 @@ export function Navbar({name}) {
         <h2 className='text-heading'>oliverbk4@gmail.com</h2>
         </div>
         <div className="flex w-full justify-around">
-        <a className="block w-15 h-15"><Image alt="Github logo" src="/githubLogo.png" className="w-14 h-14 xl:w-16 xl:h-16" width={1000} height={1000} objectFit="contain"/></a>
-        <a className="block w-15 h-15"><Image alt="Linkedin logo" src="/linkedin.png" className="w-14 h-14 xl:w-16 xl:h-16" width={1000} height={1000} objectFit="contain"/></a>
+        <Link className="block w-15 h-15" href='https://github.com/burgerking59'><Image alt="Github logo" src="/githubLogo.png" className="w-14 h-14 xl:w-16 xl:h-16" width={1000} height={1000} objectFit="contain"/></Link>
+        <Link className="block w-15 h-15" href='https://www.linkedin.com/in/oliver-burnett-kiernan-6224a9210/'><Image alt="Linkedin logo" src="/linkedin.png" className="w-14 h-14 xl:w-16 xl:h-16" width={1000} height={1000} objectFit="contain"/></Link>
         </div>
     </div>
 
