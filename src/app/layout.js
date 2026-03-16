@@ -12,9 +12,6 @@ export const metadata = {
 }
 
 export default function RootLayout({ children }) {
-  function toggleMenu() {
-    console.log("check")
-  }
 
   return (
     <html lang="en">
