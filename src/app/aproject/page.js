@@ -7,8 +7,8 @@ export default function Aproject() {
   return (
     <>
     <Navbar name={""} />
-    <div className="bg-whiteBg flex gap-8 min-h-screen w-full md:w-[70vw] fixed top-0 right-0 bottom-0 flex-col items-center justify-center p-4">
-        <p className="text-black text-base md:w-3/4">
+    <div className="bg-gradient-to-br from-whiteGrad1 via-whiteGrad2 to-whiteGrad1 flex gap-8 min-h-screen w-full md:w-[70vw] fixed top-0 right-0 bottom-0 flex-col items-center justify-center">
+        <p className="text-black text-base w-full border-t-[1px] border-t-black border-b-[1px] border-b-black p-8">
             AProject is a website I created during as part of a university course. It is a tool to store information about different projects that people have created. It allows users to create, read, update and delete projects. 
         </p>
         <div className="relative flex gap-2 bg-gradient-to-r from-gradTop to-gradBottom text-white max-h-[60vh] m-4 p-4">

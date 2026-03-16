@@ -20,13 +20,15 @@ module.exports = {
     },
     colors: {
       'black': '#303745',
-      'gradBottom': '#4C5260',
+      'gradBottom': '#646A79',
       'gradTop': '#1D2634',
       'white': '#DDD8C4',
       'whiteBg': '#E5E5E5',
       'yellow': '#CCA43B',
       'text': '#242F40',
-      'buttonBorder': '#343940'
+      'buttonBorder': '#343940',
+      'whiteGrad1' : '#A8A8A8',
+      'whiteGrad2' : '#F5F5F5'
     },
   },
   plugins: [],
