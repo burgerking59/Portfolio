@@ -7,7 +7,7 @@ export default function Projects() {
   return (
     <>
     <Navbar name={"process"} />
-    <main className="bg-white text-text overflow-y-scroll p-8 gap-6 items-center justify-center flex min-h-screen w-full md:w-[70vw] fixed top-0 right-0 bottom-0 flex-col items-center">
+    <main className="bg-white text-text overflow-y-scroll px-8 gap-6 items-center justify-center flex min-h-screen w-full md:w-[70vw] fixed top-0 right-0  flex-col items-center">
       <p className="text-white rounded-xl text-base w-full bg-black p-1 md:p-4">
         This is the standard process I use to design and create a website.  I have developed this over several years of creating websites personally and academically, learning and improving each time.
       </p>
