@@ -30,14 +30,14 @@ export function Navbar({name}) {
             <NavButton linkName={"My Process"} linkTo={"/process"} name={name} id={"process"} />
         </div>
         <div>
-        <h2 className='text-heading text-center'>Email</h2>
-        <h2 className='text-heading'>oliverbk4@gmail.com</h2>
+        <h2 className='text-base text-center'>Email</h2>
+        <h2 className='text-base'>oliverbk4@gmail.com</h2>
         </div>
         <div className="flex w-full justify-around">
-        <Link className="block w-[15%] h-auto" href='https://github.com/burgerking59'>
+        <Link className="block w-[13%] h-auto" href='https://github.com/burgerking59'>
             <Image alt="Github logo" src="/githubLogo.png" className="w-full h-auto hover:opacity-50 duration-1000" width={1000} height={1000} objectFit="contain"/>
         </Link>
-        <Link className="block w-[15%] h-auto" href='https://www.linkedin.com/in/oliver-burnett-kiernan-6224a9210/'>
+        <Link className="block w-[13%] h-auto" href='https://www.linkedin.com/in/oliver-burnett-kiernan-6224a9210/'>
             <Image alt="Linkedin logo" src="/linkedin.png" className="w-full h-auto hover:opacity-50 duration-1000" width={1000} height={1000} objectFit="contain"/>
         </Link>
         </div>
@@ -50,11 +50,11 @@ const NavButton = ({linkName, linkTo, name, id}) => {
     return (
         <>
         {name != id ? (
-            <Link href={linkTo} className='duration-1000 hover:border-t-yellow hover:border-l-yellow hover:border-buttonBorder hover:cursor-pointer border-4 border-yellow border-t-buttonBorder border-l-buttonBorder text-heading text-center p-2 px-6 m-4 bg-gradient-to-br from-gradTop to-gradBottom'>
+            <Link href={linkTo} className='duration-1000 hover:bg-black border border-white hover:text-white cursor-pointer text-heading text-center p-2 px-6 m-4 bg-white text-black rounded-full'>
             {linkName}
             </Link>)
             : (
-                <Link inert href={linkTo} className='transition delay-150 duration-1000 border-yellow border-4 text-heading text-center p-2 px-6 m-4 bg-gradient-to-br from-gradTop to-gradBottom'>
+                <Link inert href={linkTo} className='duration-1000 bg-black border border-white text-white cursor-pointer text-heading text-center p-2 px-6 m-4 rounded-full'>
             {linkName}
             </Link>)
         }
