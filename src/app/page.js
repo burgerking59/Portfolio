@@ -5,9 +5,9 @@ import { Navbar } from './nav'
 
 export default function About() {
   return (
-    <>
+    <div className="md:flex">
     <Navbar name={"about"} />
-    <main className="bg-white flex justify-center gap-8 md:gap-32 min-h-screen w-full md:w-[70vw] fixed top-0 right-0 bottom-0 flex-col items-center ">
+    <div className="bg-white flex mt-2 gap-8 min-h-screen w-full md:w-[70vw] md:fixed md:top-0 md:right-0 md:bottom-0 flex-col items-center justify-center">
       <div className="bg-black rounded-3xl">
         <h1 className="text-text text-white font-black text-4xl p-8 md:p-16 tracking-wider">Oliver Burnett-Kiernan</h1>
       </div>
@@ -17,7 +17,7 @@ export default function About() {
               I am a recent computer science graduate, with experience designing and creating various types of website for personal and academic projects. I always ensure my websites are completely functional and responsive to provide a positive user experience.
         </p>
       </div>
-    </main>
-    </>
+    </div>
+    </div>
   )
 }

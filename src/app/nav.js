@@ -13,7 +13,7 @@ export function Navbar({name}) {
 
   return (
     <>
-    <div data-state={isHidden ? "show" : "hidden"} className='z-40 md:left-0 max-md:data-[state=hidden]:left-[-100%] data-[state=show]:left-0  duration-1000 flex flex-col fixed top-0 bottom-0 md:w-[30vw] justify-between md:px-0 px-8 py-8 items-center w-full bg-black text-white'>
+    <div data-state={isHidden ? "show" : "hidden"} className='z-40 md:left-0 max-md:data-[state=hidden]:left-[-100%] data-[state=show]:left-0  duration-1000 flex flex-col fixed md:sticky h-screen top-0 bottom-0 md:w-[30vw] justify-between md:px-0 px-8 py-8 items-center w-full bg-black text-white'>
         <button onClick={toggleMenu}  className='data-[state=hidden]:hidden md:hidden fixed top-0 left-0 h-[12vh]' data-state={isHidden ? "show" : "hidden"}>
             <Image alt="Logo" src="/tabOpened.png" className="w-full h-full" width={1000} height={1000} objectFit="contain"/>
         </button>
