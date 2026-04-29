@@ -7,3 +7,17 @@
     font-weight: 400;
     font-style: normal;
 }
+
+h1 {
+    font-family: "Buenard", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Buenard", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
