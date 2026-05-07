@@ -8,6 +8,23 @@
     font-style: normal;
 }
 
+.myShadow {
+    box-shadow: 4px 4px 4px black;
+}
+
+.smallShadow {
+    box-shadow: 2px 2px 2px black;
+}
+
+.inset {
+    box-shadow: 2px 2px 2px black;
+}
+
+.inset:hover {
+    animation-duration: 1000ms;
+    box-shadow: 2px 2px 2px black inset;
+}
+
 h1 {
     font-family: "Buenard", serif;
     font-optical-sizing: auto;

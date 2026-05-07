@@ -13,7 +13,7 @@ export function Navbar({name}) {
 
   return (
     <>
-    <div data-state={isHidden ? "show" : "hidden"} className='z-40 md:left-0 max-md:data-[state=hidden]:left-[-100%] data-[state=show]:left-0  duration-1000 flex flex-col fixed md:fixed h-screen top-0 bottom-0 md:w-[30vw] justify-between md:px-0 px-8 py-8 items-center w-full bg-black text-white'>
+    <div data-state={isHidden ? "show" : "hidden"} className='z-40 smallShadow md:left-0 max-md:data-[state=hidden]:left-[-100%] data-[state=show]:left-0  duration-1000 flex flex-col fixed md:fixed h-screen top-0 bottom-0 md:w-[30vw] justify-between md:px-0 px-8 py-8 items-center w-full bg-black text-white'>
         <button onClick={toggleMenu}  className='data-[state=hidden]:hidden md:hidden fixed top-0 left-0 h-[12vh]' data-state={isHidden ? "show" : "hidden"}>
             <Image alt="Logo" src="/tabOpened.png" className="w-full h-full" width={1000} height={1000} objectFit="contain"/>
         </button>
@@ -50,11 +50,11 @@ const NavButton = ({linkName, linkTo, name, id}) => {
     return (
         <>
         {name != id ? (
-            <Link href={linkTo} className='duration-1000 hover:bg-black border border-white hover:text-white cursor-pointer text-heading text-center p-2 px-6 m-4 bg-white text-black rounded-full'>
+            <Link href={linkTo} className=' duration-1000 inset hover:bg-black border border-white hover:text-white cursor-pointer text-heading text-center p-2 px-6 m-4 bg-white text-black rounded-full'>
             {linkName}
             </Link>)
             : (
-                <Link inert href={linkTo} className='duration-1000 bg-black border border-white text-white cursor-pointer text-heading text-center p-2 px-6 m-4 rounded-full'>
+                <Link inert href={linkTo} className='inset duration-1000 bg-black border border-white text-white cursor-pointer text-heading text-center p-2 px-6 m-4 rounded-full'>
             {linkName}
             </Link>)
         }
