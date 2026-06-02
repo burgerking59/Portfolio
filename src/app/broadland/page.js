@@ -14,7 +14,7 @@ export default function Broadland() {
                 <p className="text-white text-base opacity-70">
                     Broadland cycle hire is a local business that I have worked at for a few years. The old website wasn't responsive, so I redesigned the website to improve the design, colours and functionality. The website was made using Wordpress and designed in Figma.
                 </p>
-                <Link className="flex inset duration-1000 items-center border border-black hover:border-white justify-center hover:bg-black hover:text-white bg-white w-fit p-2 rounded-full mt-2 group" href='https://norfolkbroadscycling.co.uk/'>
+                <Link className="flex inset duration-1000 items-center border border-2 border-lightBlue justify-center hover:bg-black hover:text-white bg-white w-fit p-2 rounded-full mt-2 group" href='https://norfolkbroadscycling.co.uk/'>
                 <h3 className="duration-1000 text-black group-hover:text-white">View website</h3>
                 </Link>
                 </div>

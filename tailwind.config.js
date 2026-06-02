@@ -19,12 +19,12 @@ module.exports = {
       }
     },
     colors: {
-      'black': '#0B5A61',
+      'black': '#353535',
       'gradBottom': '#646A79',
       'gradTop': '#1D2634',
       'white': '#FFFFFF',
       'whiteBg': '#E5E5E5',
-      'lightBlue': '#57C9D3',
+      'lightBlue': '#3C6E71',
       'text': '#242F40',
       'buttonBorder': '#343940',
       'whiteGrad1' : '#A8A8A8',

@@ -50,11 +50,11 @@ const NavButton = ({linkName, linkTo, name, id}) => {
     return (
         <>
         {name != id ? (
-            <Link href={linkTo} className=' duration-1000 inset hover:bg-black border border-white hover:text-white cursor-pointer text-heading text-center p-2 px-6 m-4 bg-white text-black rounded-full'>
+            <Link href={linkTo} className=' duration-1000 inset hover:bg-black border border-2 border-lightBlue hover:text-white cursor-pointer text-heading text-center p-2 px-6 m-4 bg-white text-black rounded-full'>
             {linkName}
             </Link>)
             : (
-                <Link inert href={linkTo} className='inset duration-1000 bg-black border border-white text-white cursor-pointer text-heading text-center p-2 px-6 m-4 rounded-full'>
+                <Link inert href={linkTo} className='inset duration-1000 bg-black border border-2 border-lightBlue text-white cursor-pointer text-heading text-center p-2 px-6 m-4 rounded-full'>
             {linkName}
             </Link>)
         }
