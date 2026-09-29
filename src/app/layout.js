@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import { Navbar } from './nav'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/next"
 
 
 const inter = Inter({ subsets: ['latin'] })
